@@ -1,0 +1,428 @@
+//colors
+$color_donkey_brown_approx: #a89479;
+$color_mint_julep_approx: #f0ebc5;
+$black: black;
+$white: white;
+$color_bistre_approx: #3d3020;
+$color_soya_bean_approx: #695e4f;
+$color_mine_shaft_approx: #36312a;
+$color_rhino_50_approx: rgba(57, 57, 99, .5);
+$color_gigas_approx: darkslateblue;
+
+//fonts
+$font_0: font;
+$font_1: sans-serif;
+
+//urls
+$url_0: url(MorrisRoman-Black.ttf);
+$url_1: url(../images/dao-dao-07-night.jpg);
+
+@font-face {
+	font-family: $font_0;
+	src: $url_0 format('truetype');
+}
+.colA {
+	background-color: $color_rhino_50_approx;
+	border-style: double;
+	border-color: $color_gigas_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 15px;
+	width: 50%;
+	margin: auto;
+	height: 480px;
+	margin-top: 70px;
+	p {
+		font-family: $font_0;
+		font-weight: normal;
+	}
+}
+html {
+	background-color: $black;
+}
+#exampleModal {
+	padding-top: 230px;
+}
+#titleTop {
+	text-align: center;
+	color: $color_donkey_brown_approx;
+	font-size: 20px;
+	font-family: $font_0;
+	font-weight: normal;
+	margin-top: 8px;
+}
+#centerIMG {
+	max-width: 100%;
+	left: 0;
+	padding: 0;
+	margin-left: 0;
+	background-image: $url_1;
+	background-size: 150%;
+	background-repeat: no-repeat;
+}
+#center {
+	max-width: 100%;
+	left: 0;
+	padding: 0;
+	margin-left: 0;
+	background-color: $black;
+}
+body {
+	margin: 0;
+	padding: 0;
+	background-color: $black;
+	position: absolute;
+	width: 100%;
+}
+.row {
+	margin-right: 0;
+}
+#main_one {
+	width: 100%;
+}
+.center {
+	width: 100%;
+	height: 640px;
+	left: 0;
+	padding: 0;
+	margin-left: 0;
+}
+#top {
+	width: 100%;
+	height: 50px;
+	left: 0;
+	padding: 0;
+	margin-left: 0;
+	background-color: $color_mine_shaft_approx;
+	border-style: solid;
+	border-color: $color_soya_bean_approx;
+}
+#bottom {
+	background-color: $color_bistre_approx;
+	width: 100%;
+	left: 0;
+	padding: 0;
+	margin-left: 0;
+	border-top: $color_soya_bean_approx;
+	border-style: solid;
+	border-width: 10px;
+	bottom: 0 !important;
+}
+.colu {
+	width: 160px;
+	padding: 0;
+}
+.buttonA {
+	background-color: $color_mint_julep_approx !important;
+	width: 70px;
+	align-content: center;
+	text-align: center !important;
+	color: $black !important;
+	border-style: inset !important;
+	border-color: $black !important;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 10px !important;
+}
+.inputA {
+	margin-left: 10%;
+	width: 80%;
+}
+.saltoA {
+	border-style: solid;
+	border-color: $color_gigas_approx;
+	border-width: 1px;
+}
+.tittleCenterA {
+	text-align: center;
+	color: $white;
+	font-size: 16px;
+	font-family: $font_1;
+	font-weight: bolder;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+.coreCenter {
+	text-align: center;
+	color: $white;
+	font-size: 13px;
+	font-family: $font_1;
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.coreBottom {
+	text-align: center;
+	color: $color_donkey_brown_approx;
+	font-size: 12px;
+	font-family: $font_0;
+	font-weight: lighter;
+	margin-top: 15px;
+}
+.bannerBottom {
+	text-align: center;
+	color: $color_donkey_brown_approx;
+	font-size: 15px;
+	font-family: $font_0;
+	font-weight: normal;
+	margin-top: 23px;
+}
+@media screen and(max-width: 576.98px) {
+	#titleTop {
+		text-align: center;
+		color: $color_donkey_brown_approx;
+		font-size: 18px;
+		font-family: $font_0;
+		font-weight: normal;
+		margin-top: 10px;
+	}
+	.buttonA {
+		background-color: $color_mint_julep_approx !important;
+		width: 70px;
+		align-content: center;
+		text-align: center !important;
+		color: $black !important;
+		border-style: inset !important;
+		border-color: $black !important;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 10px !important;
+		height: 30px !important;
+		font-size: 13px !important;
+		padding: 0 !important;
+		margin-top: 10px !important;
+	}
+	.tittleCenterA {
+		text-align: center;
+		color: $white;
+		font-size: 16px;
+		font-family: $font_1;
+		font-weight: bolder;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	.coreCenter {
+		text-align: center;
+		color: $white;
+		font-size: 13px;
+		font-family: $font_1;
+		font-weight: bold;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#centerIMG {
+		max-width: 100%;
+		left: 0;
+		padding: 0;
+		margin-left: 0;
+		background-image: $url_1;
+		background-size: 400%;
+		background-repeat: no-repeat;
+		background-position: -270px;
+	}
+	.coluBottom {
+		margin: auto;
+		flex-basis: auto !important;
+	}
+	.inputA {
+		font-size: 13px;
+		margin-left: 10%;
+		width: 80%;
+		margin-top: 5px;
+	}
+	.bannerBottom {
+		font-size: 16px;
+		font-style: bolder;
+	}
+	.coreBottom {
+		font-size: 11px;
+	}
+	#bottom {
+		height: 350px;
+	}
+	.colA {
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 15px;
+		width: 70%;
+		margin: auto;
+		height: 500px;
+		margin-top: 45px;
+	}
+}
+@media screen and(min-width: 577px) and(max-width: 767.98px) {
+	#bottom {
+		background-color: $color_bistre_approx;
+		width: 100%;
+		height: 180px;
+		left: 0;
+		padding: 0;
+		margin-left: 0;
+		border-top: $color_soya_bean_approx;
+		border-style: solid;
+		border-width: 10px;
+		bottom: 0;
+		position: fixed;
+	}
+	.tittleCenterA {
+		text-align: center;
+		color: $white;
+		font-size: 13px;
+		font-family: $font_1;
+		font-weight: bolder;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	.coreCenter {
+		text-align: center;
+		color: $white;
+		font-size: 10px;
+		font-family: $font_1;
+		font-weight: bold;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	.inputA {
+		font-size: 10px;
+	}
+	.buttonA {
+		background-color: $color_mint_julep_approx !important;
+		width: 70px;
+		align-content: center;
+		text-align: center !important;
+		color: $black !important;
+		border-style: inset !important;
+		border-color: $black !important;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 10px !important;
+		height: 20px !important;
+		font-size: 10px !important;
+		padding: 0 !important;
+		margin-top: 5px !important;
+	}
+	#centerIMG {
+		max-width: 100%;
+		left: 0;
+		padding: 0;
+		margin-left: 0;
+		background-image: $url_1;
+		background-size: 210%;
+		background-repeat: no-repeat;
+	}
+	.imagenes {
+		margin-top: 85px;
+	}
+	.bannerBottom {
+		font-size: 10px;
+		font-style: bolder;
+	}
+	.coreBottom {
+		font-size: 8px;
+	}
+	.center {
+		width: 100%;
+		height: 640px;
+		left: 0;
+		padding: 0;
+		margin-left: 0;
+	}
+	.center2 {
+		background-color: $black;
+		width: 100%;
+		height: 480px;
+		left: 0;
+		padding: 0;
+		margin-left: 0;
+	}
+	.colA {
+		width: 70%;
+		margin: auto;
+		height: 340px;
+		margin-top: 85px;
+		p {
+			font-size: 12px;
+			font-weight: lighter;
+		}
+	}
+	.coluBottom {
+		margin: auto;
+	}
+}
+@media screen and(min-width: 768px) and(max-width: 991.98px) {
+	#bottom {
+		background-color: $color_bistre_approx;
+		width: 100%;
+		height: 180px;
+		left: 0;
+		padding: 0;
+		margin-left: 0;
+		border-top: $color_soya_bean_approx;
+		border-style: solid;
+		border-width: 10px;
+		bottom: 0;
+		position: fixed;
+		p {
+			font-size: 10.5px;
+		}
+	}
+	.tittleCenterA {
+		text-align: center;
+		color: $white;
+		font-size: 13px;
+		font-family: $font_1;
+		font-weight: bolder;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	.coreCenter {
+		text-align: center;
+		color: $white;
+		font-size: 10px;
+		font-family: $font_1;
+		font-weight: bold;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	.inputA {
+		font-size: 10px;
+	}
+	.buttonA {
+		background-color: $color_mint_julep_approx !important;
+		width: 70px;
+		align-content: center;
+		text-align: center !important;
+		color: $black !important;
+		border-style: inset !important;
+		border-color: $black !important;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 10px !important;
+		height: 20px !important;
+		font-size: 10px !important;
+		padding: 0 !important;
+		margin-top: 5px !important;
+	}
+	.imagenes {
+		margin-top: 55px;
+	}
+	.center {
+		width: 100%;
+		left: 0;
+		padding: 0;
+		margin-left: 0;
+	}
+	.center2 {
+		background-color: $black;
+		width: 100%;
+		height: 480px;
+		left: 0;
+		padding: 0;
+		margin-left: 0;
+	}
+	.colA {
+		width: 70%;
+		margin: auto;
+		height: 330px;
+		margin-top: 70px;
+	}
+}
+@media screen and(min-width: 991.98px) {
+}
+#confirmarButton a {
+	color: $white;
+}

@@ -1,0 +1,562 @@
+.container {
+  max-width: none;
+}
+
+@font-face {
+  font-family: font;
+  src: url(MorrisRoman-Black.ttf) format("truetype");
+}
+.colA {
+  background-color: rgba(79, 67, 53, 0.7);
+  border-style: double;
+  border-color: dimgrey;
+  border-radius: 15px;
+  width: 70%;
+  margin: auto;
+  height: 330px;
+  margin-top: 110px;
+}
+.colA p {
+  font-family: font;
+  font-weight: normal;
+}
+
+html {
+  background-color: black;
+}
+
+.buttonA {
+  background-color: #f0ebc5;
+  width: 70px;
+  align-content: center;
+  text-align: center;
+  color: black;
+  border-style: inset;
+  border-color: black;
+  border-radius: 10px;
+}
+.buttonA a {
+  color: black;
+}
+
+.bannerBottom {
+  text-align: center;
+  color: #a89479;
+  font-size: 15px;
+  font-family: font;
+  font-weight: normal;
+  margin-top: 23px;
+}
+
+.carrouselA {
+  width: 100%;
+  height: 100%;
+}
+
+.imagenes {
+  width: 10px;
+  margin-top: 15px;
+}
+
+#center {
+  max-width: 100%;
+  left: 0;
+  padding: 0;
+  margin-left: 0;
+  background-image: url(../images/568827-digital_art-night-town.jpg);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: 0 -35px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black !important;
+  position: absolute;
+  width: 100%;
+}
+
+.carouselSize {
+  height: 640px;
+}
+
+.slideFontSize {
+  font-size: 17px;
+}
+
+.center2 {
+  width: 100%;
+  height: 640px;
+  left: 0;
+  padding: 0;
+  margin-left: 0;
+}
+
+.row {
+  margin-right: 0;
+}
+
+#main_one {
+  width: 100%;
+}
+
+.center {
+  width: 100%;
+  height: 640px;
+  left: 0;
+  padding: 0;
+  margin-left: 0;
+}
+
+#top {
+  width: 100%;
+  height: 50px;
+  left: 0;
+  padding: 0;
+  margin-left: 0;
+  background-color: #36312a;
+  border-style: solid;
+  border-color: #695e4f;
+}
+
+#bottom {
+  background-color: #3d3020;
+  width: 100%;
+  height: 180px;
+  left: 0;
+  padding: 0;
+  margin-left: 0;
+  border-top: #695e4f;
+  border-style: solid;
+  border-width: 10px;
+}
+
+.colu {
+  width: 160px;
+  padding: 0;
+}
+
+.colu2 {
+  width: 160px;
+  height: 180px;
+}
+
+.colB {
+  margin-top: 20px;
+  background-color: rgba(57, 57, 99, 0.5);
+  border-style: double;
+  border-color: darkslateblue;
+  border-radius: 15px;
+}
+
+.colC {
+  margin-top: 20px;
+  background-color: rgba(79, 67, 53, 0.6);
+  border-style: double;
+  border-color: dimgrey;
+  border-radius: 15px;
+}
+
+.colD {
+  background-color: #4f4335;
+  width: 100%;
+  height: 640px;
+}
+
+.inputA {
+  margin-left: 10%;
+  width: 80%;
+  margin-top: 35px;
+}
+
+.saltoA {
+  border-style: solid;
+  border-color: dimgrey;
+  border-width: 1px;
+}
+
+#titleTop {
+  text-align: center;
+  color: #a89479;
+  font-size: 18px;
+  font-family: font;
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+.coreCenter {
+  text-align: center;
+  color: #a89479;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.tittleCenter {
+  text-align: center;
+  color: #a89479;
+  font-size: 13px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 14px;
+}
+
+.tittleCenterA {
+  text-align: center;
+  color: #a89479;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  margin-top: 15px;
+}
+
+.tittleCenterB {
+  text-align: center;
+  color: #a89479;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  margin-top: 15px;
+}
+
+.coreCenterB {
+  text-align: center;
+  color: darkslateblue;
+  font-size: 12px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.coreBottom {
+  text-align: center;
+  color: #a89479;
+  font-size: 12px;
+  font-family: font;
+  font-weight: lighter;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 576.98px) {
+  #titleTop {
+    text-align: center;
+    color: #a89479;
+    font-size: 18px;
+    font-family: font;
+    font-weight: normal;
+    margin-top: 10px;
+  }
+
+  #center {
+    max-width: 100%;
+    left: 0;
+    padding: 0;
+    margin-left: 0;
+    height: 840px;
+    background-image: url(../images/568827-digital_art-night-town.jpg);
+    background-size: 410%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .imagenes {
+    width: 10px;
+    margin-top: 15px;
+    bottom: -5.5%;
+  }
+
+  .infoCarousel {
+    display: block;
+  }
+
+  .coluBottom {
+    margin: auto;
+    flex-basis: auto !important;
+  }
+
+  .inputA {
+    font-size: 13px;
+    margin-left: 10%;
+    width: 80%;
+    margin-top: 15px;
+  }
+
+  .bannerBottom {
+    font-size: 16px;
+    font-style: bolder;
+  }
+
+  .coreBottom {
+    font-size: 11px;
+  }
+
+  #bottom {
+    height: 350px;
+  }
+  #bottom p {
+    padding: 0;
+    margin: 8px;
+    font-size: 15px;
+  }
+
+  .slideFontSize {
+    font-size: 12.5px;
+  }
+
+  .center {
+    width: 100%;
+    height: 380px;
+    left: 0;
+    padding: 0;
+    margin-left: 0;
+  }
+
+  .center2 {
+    width: 100%;
+    height: 480px;
+    left: 0;
+    padding: 0;
+    margin-left: 0;
+  }
+
+  .colD {
+    background-color: #4f4335;
+    width: 100%;
+    height: 480px;
+  }
+
+  .carrouselA {
+    width: 100%;
+    height: 480px;
+  }
+
+  .carouselSize {
+    height: 480px;
+  }
+
+  .colA {
+    background-color: rgba(79, 67, 53, 0.7);
+    border-style: double;
+    border-color: dimgrey;
+    border-radius: 15px;
+    width: 70%;
+    margin: auto;
+    height: 280px;
+    margin-top: 45px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 767.98px) {
+  #center {
+    max-width: 100%;
+    left: 0;
+    padding: 0;
+    margin-left: 0;
+    height: 640px;
+    background-image: url(../images/568827-digital_art-night-town.jpg);
+    background-size: 145%;
+    background-repeat: no-repeat;
+    background-position: -90px 0;
+  }
+
+  .imagenes {
+    width: 10px;
+    margin-top: 15px;
+    bottom: -6%;
+    margin-top: 85px;
+  }
+
+  #bottom {
+    background-color: #3d3020;
+    width: 100%;
+    height: 150px;
+    left: 0;
+    padding: 0;
+    margin-left: 0;
+    border-top: #695e4f;
+    border-style: solid;
+    border-width: 10px;
+    bottom: 0;
+    position: fixed;
+  }
+  #bottom p {
+    padding: 0;
+    margin: 8px;
+    font-size: 10px;
+  }
+
+  .inputA {
+    font-size: 10px;
+    margin-left: 10%;
+    width: 80%;
+    margin-top: 15px;
+  }
+
+  .bannerBottom {
+    font-size: 10px;
+    font-style: bolder;
+  }
+
+  .coreBottom {
+    font-size: 8px;
+  }
+
+  .slideFontSize {
+    font-size: 11px;
+  }
+
+  .center {
+    width: 100%;
+    height: 480px;
+    left: 0;
+    padding: 0;
+    margin-left: 0;
+  }
+
+  .center2 {
+    width: 100%;
+    height: 480px;
+    left: 0;
+    padding: 0;
+    margin-left: 0;
+  }
+
+  .colD {
+    background-color: #4f4335;
+    width: 100%;
+    height: 480px;
+  }
+
+  .carrouselA {
+    width: 100%;
+    height: 480px;
+  }
+
+  .carouselSize {
+    height: 480px;
+  }
+
+  .colA {
+    background-color: rgba(79, 67, 53, 0.7);
+    border-style: double;
+    border-color: dimgrey;
+    border-radius: 15px;
+    width: 70%;
+    margin: auto;
+    height: 280px;
+    margin-top: 85px;
+  }
+  .colA p {
+    font-size: 12px;
+  }
+
+  .coluBottom {
+    margin: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  #center {
+    max-width: 100%;
+    left: 0;
+    padding: 0;
+    margin-left: 0;
+    height: 640px;
+    background-image: url(../images/568827-digital_art-night-town.jpg);
+    background-size: 130%;
+    background-repeat: no-repeat;
+  }
+
+  .imagenes {
+    width: 10px;
+    margin-top: 15px;
+    bottom: -2.5%;
+    margin-top: 55px;
+  }
+
+  #bottom {
+    background-color: #3d3020;
+    width: 100%;
+    height: 150px;
+    left: 0;
+    padding: 0;
+    margin-left: 0;
+    border-top: #695e4f;
+    border-style: solid;
+    border-width: 10px;
+    bottom: 0;
+    position: fixed;
+  }
+  #bottom p {
+    padding: 0;
+    margin: 8px;
+    font-size: 10.5 px;
+  }
+
+  .slideFontSize {
+    font-size: 15.5px;
+  }
+
+  .center {
+    width: 100%;
+    height: 480px;
+    left: 0;
+    padding: 0;
+    margin-left: 0;
+  }
+
+  .center2 {
+    width: 100%;
+    height: 480px;
+    left: 0;
+    padding: 0;
+    margin-left: 0;
+  }
+
+  .colD {
+    background-color: #4f4335;
+    width: 100%;
+    height: 480px;
+  }
+
+  .carrouselA {
+    width: 100%;
+    height: 480px;
+  }
+
+  .carouselSize {
+    height: 480px;
+  }
+
+  .colA {
+    background-color: rgba(79, 67, 53, 0.7);
+    border-style: double;
+    border-color: dimgrey;
+    border-radius: 15px;
+    width: 70%;
+    margin: auto;
+    height: 330px;
+    margin-top: 70px;
+  }
+}
+@media screen and (min-width: 991.98px) {
+  .imagenes {
+    width: 10px;
+    margin-top: 15px;
+    bottom: -1.5%;
+  }
+
+  #bottom {
+    background-color: #3d3020;
+    width: 100%;
+    height: 180px;
+    left: 0;
+    padding: 0;
+    margin-left: 0;
+    border-top: #695e4f;
+    border-style: solid;
+    border-width: 10px;
+  }
+}
+
+/*# sourceMappingURL=login.css.map */
