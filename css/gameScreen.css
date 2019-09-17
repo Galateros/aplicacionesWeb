@@ -1,4 +1,9 @@
 /*Por Axel Octavio Meinguer Estrada - A01653448*/
+@font-face {
+    font-family: 'font';
+    src: url('MorrisRoman-Black.ttf') format('truetype');
+    
+}
 .container{
     max-width: none;
 }
