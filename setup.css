@@ -1,0 +1,240 @@
+/*Por Axel Octavio Meinguer Estrada - A01653448*/
+.container{
+    max-width: none;
+}
+
+.bannerBottom{
+   
+	text-align: center;
+	color: #a89479;
+	font-size: 15px;
+	font-family: sans-serif;
+	font-weight: bolder;
+	margin-top: 23px;
+
+}
+html{
+    background-image: url("../images/juego.jpg");
+}
+#footer{
+    
+    
+}
+body{
+    background-image: url("../images/juego.jpg");
+    margin: auto;
+    padding: 0;
+    background-color: black;
+    position: absolute;
+    width: 100%
+}
+#footer{
+
+}
+#center2{
+    width: 100%;
+    height: 220px;
+    left: 0;
+    padding: 0;
+    margin-left: 0px;
+}
+  
+.row{
+    margin-right: 0px;
+}
+h3{
+    color:white;
+}
+
+#main_one{
+    width: 100%;
+}
+
+#center{
+    color:white;
+    width: 100%;
+    height: 420px;
+    left: 0;
+    padding: 0;
+    margin-left: 0px;
+}
+
+ .row{
+    margin-right: 0px;
+}
+
+#top{
+   
+    width: 100%;
+    height: 50px;
+    left: 0;
+    padding: 0;
+    margin-left: 0px;
+    background-color: #36312a;
+    border-style: solid;
+    border-color: #695e4f;
+}
+li{
+    color: white;
+    text-align: left
+    margin-left:10px;
+}
+#bottom{
+    background-color: #3d3020;
+    width: 100%;
+    height: 180px;
+    left: 0;
+    padding: 0;
+    margin-left: 0px;
+    border-top: #695e4f;
+    border-style: solid;
+    border-width: 10px;
+}
+
+
+
+.colu   {
+    text-align: center;
+    width:  160px;
+    height: 400px;
+  margin-top: 15px;
+    margin-left:0;
+    margin-right:auto;
+    
+}
+
+.Button1{
+    margin:auto;
+    background-color: #f0ebc5;
+    width: 70px;
+    align-content: center;
+    text-align: center;
+    color: black;
+    border-style: inset;
+    border-color: black;
+    border-radius: 10px;
+}
+
+.colu2   {
+    margin:auto;
+    width:  160px;
+    height: 180px;  
+}
+
+.colA{
+margin-left:auto;
+ margin-top: 20px;
+background-color: #4f4335;
+border-style: double;
+border-color: dimgrey;
+border-radius: 15px;
+}
+.colB {
+	margin-top: 20px;
+	background-color: rgba(57, 57, 99, .5);
+	border-style: double;
+	border-color: darkslateblue;
+	border-radius: 15px;
+}
+.colC{
+
+	margin-top: 20px;
+	background-color: rgba(79, 67, 53, .6);
+	border-style: double;
+	border-color: dimgrey;
+	border-radius: 15px;
+
+}
+
+.saltoA{
+    /*! margin-top: 20px; */
+	/*! background-color: rgba(79, 67, 53, .6); */
+	border-style: solid;
+	border-color: dimgrey;
+	/*! border-radius: 15px; */
+    border-width: 1px;
+}
+
+
+#titleTop{
+     text-align: center;
+     color:#a89479;
+    font-size: 18px;
+    font-family:sans-serif;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+.coreCenter{
+ text-align: center;
+     color:#a89479;
+    font-size: 12px;
+    font-family:sans-serif;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.coreCenterB{
+ text-align: center;
+     color:darkslateblue;
+    font-size: 12px;
+    font-family:sans-serif;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.coreBottom{
+ text-align: center;
+     color:#a89479;
+    font-size: 12px;
+    font-family:sans-serif;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.salida{
+    
+}
+.name{
+    float:left;
+    color:#a89479;
+    font-size: 18px;
+    font-family:sans-serif;
+    font-weight: bolder;
+     margin-top: 10px;
+     font-family: 'font';
+}
+.home{
+   float:left;
+}
+.header{
+    float:left;
+    color: white;
+     width: 100%;
+    
+    left: 0;
+    padding: left;
+    text-align: center;
+    margin-left: 0px;
+    background-color: #36312a;
+    border-style: solid;
+    border-color: #695e4f;
+    font-family: 'Playfair Display', serif;
+}
+.fas{
+  font-size: 2.5em;
+  margin-top: 5px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media screen and (max-width: 576.98px) { 
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media screen and (min-width: 577px) and (max-width: 767.98px) { 
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width: 991.98px) { 
+}
+
+@media screen and (min-width: 991.98px) { 
+}
+
