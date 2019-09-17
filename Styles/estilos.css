@@ -1,0 +1,222 @@
+@font-face {
+  font-family: font;
+  src: url(MorrisRoman-Black.ttf) format("truetype");
+}
+html {
+  background-image: url(../Images/inn.jpg);
+  background-repeat: no-repeat;
+  background-size: 2000px;
+  opacity: 1;
+  background-color: rgba(57, 57, 99, 0.4);
+}
+
+html::after {
+  background-image: url(../Images/inn.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+}
+
+body {
+  color: white;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  width: 100%;
+  opacity: 1;
+}
+
+h2 {
+  font-family: Playfair Display, serif;
+}
+
+.fas {
+  font-size: 2.5em;
+  margin-top: 5px;
+}
+
+.salida {
+  float: left;
+}
+
+.name {
+  float: left;
+  color: #a89479;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  margin-top: 10px;
+  font-family: font;
+}
+
+.perfil {
+  float: left;
+}
+
+.header {
+  float: left;
+  text-align: center;
+  background-color: #36312a;
+  border-style: solid;
+  border-color: #695e4f;
+}
+
+.banner {
+  margin-top: 50px;
+  float: left;
+  margin-bottom: 50px;
+}
+
+.input {
+  margin-bottom: 20px;
+  position: relative;
+  font-size: 1.5em;
+  background: linear-gradient(21deg, #10abff, #1beabd);
+  padding: 3px;
+  display: inline-block;
+  border-radius: 9999em;
+}
+.input *:not(span) {
+  position: relative;
+  display: inherit;
+  border-radius: inherit;
+  margin: 0;
+  border: none;
+  outline: none;
+  padding: 0 0.325em;
+  z-index: 1;
+}
+.input *:not(span):focus + span {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.titulo {
+  width: auto;
+  text-align: center;
+  margin-left: auto;
+  align-content: center;
+  font-size: 3rem;
+  font-family: Playfair Display, serif;
+}
+
+.juego {
+  text-align: center;
+  float: left;
+  margin-bottom: 40px;
+  font-family: Playfair Display, serif;
+}
+
+.top {
+  text-align: center;
+  float: left;
+  background-color: #36312a;
+  border-style: double;
+  border-color: dimgrey;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 2rem;
+  font-family: Playfair Display SC, serif;
+  margin-bottom: 100px;
+}
+.top p {
+  font-size: 1.5rem;
+}
+
+.saltoA {
+  border-style: solid;
+  border-color: dimgrey;
+  border-width: 1px;
+}
+
+.union {
+  margin-top: 50px;
+}
+
+.new {
+  margin-top: 50px;
+  font-size: 1.4em;
+}
+
+.NuevaPartida {
+  position: relative;
+  display: inline-block;
+  margin-top: 50px;
+  border-bottom: 1px dotted black;
+}
+.NuevaPartida .tooltiptext {
+  visibility: hidden;
+  width: 170px;
+  background-color: #555;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 40%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.NuevaPartida .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.NuevaPartida:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.brk-btn {
+  position: relative;
+  font-size: 1.4em;
+  background: none;
+  color: aqua;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0.2em solid aqua;
+  padding: 0.5em 1em;
+}
+.brk-btn:hover::before {
+  right: 80%;
+}
+.brk-btn:hover::after {
+  left: 80%;
+}
+
+.brk-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10%;
+  background: #222;
+  height: 0.3em;
+  right: 20%;
+  top: -0.21em;
+  transform: skewX(-45deg);
+  transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.brk-btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10%;
+  background: #222;
+  height: 0.3em;
+  left: 20%;
+  bottom: -0.25em;
+  transform: skewX(45deg);
+  transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+/*# sourceMappingURL=estilos.css.map */

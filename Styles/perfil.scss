@@ -1,0 +1,174 @@
+//colors
+$white: white;
+$black_0: rgba(0, 0, 0, .0);
+$color_donkey_brown_approx: #a89479;
+$color_mine_shaft_approx: #36312a;
+$color_soya_bean_approx: #695e4f;
+$black_80: rgba(0, 0, 0, .8);
+$color_dove_gray_approx: dimgrey;
+$black:  black;
+$cyan_aqua: aqua;
+$color_log_cabin_approx: #222;
+
+//fonts
+$font_0: font;
+$font_1: Playfair Display;
+$font_2: serif;
+
+//urls
+$url_0: url(MorrisRoman-Black.ttf);
+$url_1: url(../Images/inn.jpg);
+
+@font-face {
+	font-family: $font_0;
+	src: $url_0 format('truetype');
+}
+.fondo {
+	z-index: -3;
+}
+html {
+	background-image: $url_1;
+	background-size: 100px;
+	background-repeat: no-repeat;
+	background-size: 2000px;
+	opacity: 1.0;
+}
+body {
+	color: $white;
+	margin: 0;
+	padding: 0;
+	background-color: $black_0;
+	position: absolute;
+	width: 100%;
+}
+.fas {
+	font-size: 2.5em;
+	margin-top: 5px;
+}
+.salida {
+	float: left;
+}
+.name {
+	float: left;
+	color: $color_donkey_brown_approx;
+	font-size: 18px;
+	font-weight: bolder;
+	margin-top: 10px;
+	font-family: $font_0;
+	opacity: 1.0;
+}
+.home {
+	float: left;
+}
+.header {
+	float: left;
+	text-align: center;
+	background-color: $color_mine_shaft_approx;
+	border-style: solid;
+	border-color: $color_soya_bean_approx;
+}
+.perfil {
+	margin-top: 50px;
+	align-content: center;
+	text-align: center;
+	float: left;
+	padding-bottom: 50px;
+	margin-bottom: 100px;
+	background-color: $black_80;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 1px;
+}
+.foto {
+	width: 200px;
+}
+.f1 {
+	float: left;
+}
+.f2 {
+	float: left;
+}
+.banner {
+	margin-top: 50px;
+	float: left;
+	margin-bottom: 50px;
+}
+.medio {
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+.titulo {
+	width: auto;
+	text-align: center;
+	margin-left: auto;
+	align-content: center;
+}
+.juego {
+	text-align: center;
+	float: left;
+	margin-bottom: 40px;
+	font-family: $font_1, $font_2;
+}
+.top {
+	text-align: center;
+	float: left;
+	background-color: $color_mine_shaft_approx;
+	border-style: double;
+	border-color: $color_dove_gray_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 15px;
+	padding: 10px;
+}
+.saltoA {
+	border-style: solid;
+	border-color: $color_dove_gray_approx;
+	border-width: 1px;
+}
+.NuevaPartida {
+	position: relative;
+	display: inline-block;
+	margin-top: 50px;
+	border-bottom: 1px dotted $black;
+}
+.brk-btn {
+	position: relative;
+	background: none;
+	color: $cyan_aqua;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 0.2em solid $cyan_aqua;
+	padding: 0.5em 1em;
+	&:hover::before {
+		right: 80%;
+	}
+	&:hover::after {
+		left: 80%;
+	}
+}
+.brk-btn::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 10%;
+	background: $color_log_cabin_approx;
+	height: 0.3em;
+	right: 20%;
+	top: -0.21em;
+	//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+	transform: skewX(-45deg);
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.brk-btn::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 10%;
+	background: $color_log_cabin_approx;
+	height: 0.3em;
+	left: 20%;
+	bottom: -0.25em;
+	//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+	transform: skewX(45deg);
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
