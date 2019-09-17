@@ -1,0 +1,237 @@
+//colors
+$color_rhino_40_approx: rgba(57, 57, 99, .4);
+$white: white;
+$black_80: rgba(0, 0, 0, .8);
+$color_donkey_brown_approx: #a89479;
+$color_mine_shaft_approx: #36312a;
+$color_soya_bean_approx: #695e4f;
+$color_dove_gray_approx: dimgrey;
+$black:  black;
+$color_fuscous_gray_approx: #555;
+$cyan_aqua: aqua;
+$color_log_cabin_approx: #222;
+$color_dodger_blue_approx: #10abff;
+$color_turquoise_approx: #1beabd;
+
+//fonts
+$font_0: font;
+$font_1: Playfair Display;
+$font_2: serif;
+$font_3: sans-serif;
+$font_4: Playfair Display SC;
+
+
+//urls
+$url_0: url(MorrisRoman-Black.ttf);
+$url_1: url(../Images/inn.jpg);
+
+@font-face {
+	font-family: $font_0;
+	src: $url_0 format('truetype');
+}
+html {
+	background-image: $url_1;
+	background-repeat: no-repeat;
+	background-size: 2000px;
+	opacity: 1.0;
+	background-color: $color_rhino_40_approx;
+}
+html::after {
+	background-image: $url_1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.9;
+}
+body {
+	color: $white;
+	margin: 0;
+	padding: 0;
+	background-color: $black_80;
+	position: absolute;
+	width: 100%;
+	opacity: 1;
+}
+h2 {
+	font-family: $font_1, $font_2;
+}
+.fas {
+	font-size: 2.5em;
+	margin-top: 5px;
+}
+.salida {
+	float: left;
+}
+.name {
+	float: left;
+	color: $color_donkey_brown_approx;
+	font-size: 18px;
+	font-family: $font_3;
+	font-weight: bolder;
+	margin-top: 10px;
+	font-family: $font_0;
+}
+.perfil {
+	float: left;
+}
+.header {
+	float: left;
+	text-align: center;
+	background-color: $color_mine_shaft_approx;
+	border-style: solid;
+	border-color: $color_soya_bean_approx;
+}
+.banner {
+	margin-top: 50px;
+	float: left;
+	margin-bottom: 50px;
+}
+.input {
+	margin-bottom: 20px;
+	position: relative;
+	font-size: 1.5em;
+	background: linear-gradient(21deg, $color_dodger_blue_approx, $color_turquoise_approx);
+	padding: 3px;
+	display: inline-block;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 9999em;
+	*:not(span) {
+		position: relative;
+		display: inherit;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: inherit;
+		margin: 0;
+		border: none;
+		outline: none;
+		padding: 0 0.325em;
+		z-index: 1;
+		&:focus + span {
+			opacity: 1;
+			//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+			transform: scale(1);
+		}
+	}
+}
+.titulo {
+	width: auto;
+	text-align: center;
+	margin-left: auto;
+	align-content: center;
+	font-size: 3rem;
+	font-family: $font_1, $font_2;
+}
+.juego {
+	text-align: center;
+	float: left;
+	margin-bottom: 40px;
+	font-family: $font_1, $font_2;
+}
+.top {
+	text-align: center;
+	float: left;
+	background-color: $color_mine_shaft_approx;
+	border-style: double;
+	border-color: $color_dove_gray_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 15px;
+	padding: 10px;
+	font-size: 2rem;
+	font-family: $font_4, $font_2;
+	margin-bottom: 100px;
+	p {
+		font-size: 1.5rem;
+	}
+}
+.saltoA {
+	border-style: solid;
+	border-color: $color_dove_gray_approx;
+	border-width: 1px;
+}
+.union {
+	margin-top: 50px;
+}
+.new {
+	margin-top: 50px;
+	font-size: 1.4em;
+}
+.NuevaPartida {
+	position: relative;
+	display: inline-block;
+	margin-top: 50px;
+	border-bottom: 1px dotted $black;
+	.tooltiptext {
+		visibility: hidden;
+		width: 170px;
+		background-color: $color_fuscous_gray_approx;
+		color: $white;
+		text-align: center;
+		padding: 5px 0;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 6px;
+		position: absolute;
+		z-index: 1;
+		bottom: 125%;
+		left: 40%;
+		margin-left: -60px;
+		opacity: 0;
+		//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: opacity 0.3s;
+	}
+	.tooltiptext::after {
+		content: "";
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		margin-left: -5px;
+		border-width: 5px;
+		border-style: solid;
+		border-color: $color_fuscous_gray_approx transparent transparent transparent;
+	}
+	&:hover .tooltiptext {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+.brk-btn {
+	position: relative;
+	font-size: 1.4em;
+	background: none;
+	color: $cyan_aqua;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 0.2em solid $cyan_aqua;
+	padding: 0.5em 1em;
+	&:hover::before {
+		right: 80%;
+	}
+	&:hover::after {
+		left: 80%;
+	}
+}
+.brk-btn::before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 10%;
+	background: $color_log_cabin_approx;
+	height: 0.3em;
+	right: 20%;
+	top: -0.21em;
+	//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+	transform: skewX(-45deg);
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.brk-btn::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 10%;
+	background: $color_log_cabin_approx;
+	height: 0.3em;
+	left: 20%;
+	bottom: -0.25em;
+	//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+	transform: skewX(45deg);
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+}
