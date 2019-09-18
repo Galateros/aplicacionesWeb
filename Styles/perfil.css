@@ -1,129 +1,139 @@
 @font-face {
-  font-family: font;
-  src: url(MorrisRoman-Black.ttf) format("truetype");
+    font-family: 'font';
+    src: url('MorrisRoman-Black.ttf') format('truetype');
+    
 }
-.fondo {
+.fondo{
   z-index: -3;
 }
-
-html {
-  background-image: url(../Images/inn.jpg);
+html{
+  background-image: url("../Images/inn.jpg");
   background-size: 100px;
   background-repeat: no-repeat;
-  background-size: 2000px;
-  opacity: 1;
+   background-size: 2000px;
+  opacity: 1.0 ;
 }
 
-body {
-  color: white;
-  margin: 0;
-  padding: 0;
-  background-color: rgba(0, 0, 0, 0);
-  position: absolute;
-  width: 100%;
-}
 
-.fas {
+body{
+	color: white;
+    margin: 0;
+    padding: 0;
+       background-color:rgba(0, 0, 0, .0);
+    position: absolute;
+    width: 100%;
+}
+.fas{
   font-size: 2.5em;
   margin-top: 5px;
 }
-
-.salida {
-  float: left;
+.salida{
+	float: left;
+ 
 }
-
-.name {
+.name{
+	float: left;
   float: left;
-  color: #a89479;
-  font-size: 18px;
-  font-weight: bolder;
-  margin-top: 10px;
-  font-family: font;
-  opacity: 1;
+  color:#a89479;
+    font-size: 18px;
+    font-weight: bolder;
+     margin-top: 10px;
+         font-family: 'font';
+          opacity: 1.0 ;
 }
-
-.home {
-  float: left;
+.home{
+	float: left;
 }
-
-.header {
+.header{
   float: left;
   text-align: center;
   background-color: #36312a;
-  border-style: solid;
-  border-color: #695e4f;
+   border-style: solid;
+    border-color: #695e4f;
 }
-
-.perfil {
+.perfil{
   margin-top: 50px;
   align-content: center;
   text-align: center;
   float: left;
   padding-bottom: 50px;
   margin-bottom: 100px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color:rgba(0, 0, 0, .8);
   border-radius: 1px;
+  font-family: 'Playfair Display', serif;
+  size: 4.4em;
+}
+.perfil p{
+  font-size: 1.5em;
 }
 
-.foto {
+.foto{
   width: 200px;
 }
 
-.f1 {
+.f1{
   float: left;
 }
 
-.f2 {
+.f2{
   float: left;
 }
-
-.banner {
-  margin-top: 50px;
-  float: left;
-  margin-bottom: 50px;
+.banner{
+	margin-top: 50px;
+	float: left;
+	margin-bottom: 50px;
 }
 
-.medio {
-  margin-top: 50px;
+.medio{
+
+	margin-top: 50px;
   margin-bottom: 100px;
 }
-
-.titulo {
-  width: auto;
-  text-align: center;
-  margin-left: auto;
-  align-content: center;
+.titulo{
+	width: auto;
+	text-align: center;
+	margin-left: auto;
+	align-content: center;
 }
 
-.juego {
-  text-align: center;
-  float: left;
-  margin-bottom: 40px;
-  font-family: Playfair Display, serif;
+.juego{
+	text-align: center;
+	float: left;
+	margin-bottom: 40px;
+  font-family: 'Playfair Display', serif;
+	
 }
 
-.top {
-  text-align: center;
-  float: left;
-  background-color: #36312a;
-  border-style: double;
-  border-color: dimgrey;
-  border-radius: 15px;
-  padding: 10px;
+
+
+.top{
+	text-align: center;
+	float: left;
+	background-color: #36312a;
+	border-style: double;
+	border-color: dimgrey;
+	border-radius: 15px;
+	padding: 10px;
+}
+.saltoA{
+    /*! margin-top: 20px; */
+	/*! background-color: rgba(79, 67, 53, .6); */
+	border-style: solid;
+	border-color: dimgrey;
+	/*! border-radius: 15px; */
+    border-width: 1px;
 }
 
-.saltoA {
-  border-style: solid;
-  border-color: dimgrey;
-  border-width: 1px;
-}
 
 .NuevaPartida {
   position: relative;
   display: inline-block;
   margin-top: 50px;
-  border-bottom: 1px dotted black;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
+
+/* Tooltip text */
+
 
 .brk-btn {
   position: relative;
@@ -134,13 +144,6 @@ body {
   border: 0.2em solid aqua;
   padding: 0.5em 1em;
 }
-.brk-btn:hover::before {
-  right: 80%;
-}
-.brk-btn:hover::after {
-  left: 80%;
-}
-
 .brk-btn::before {
   content: "";
   display: block;
@@ -151,9 +154,9 @@ body {
   right: 20%;
   top: -0.21em;
   transform: skewX(-45deg);
+  -webkit-transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
   transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
 }
-
 .brk-btn::after {
   content: "";
   display: block;
@@ -164,7 +167,16 @@ body {
   left: 20%;
   bottom: -0.25em;
   transform: skewX(45deg);
+  -webkit-transition: all 0.45 cubic-bezier(0.86, 0, 0.07, 1);
   transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
 }
+.brk-btn:hover::before {
+  right: 80%;
+}
+.brk-btn:hover::after {
+  left: 80%;
+}
 
-/*# sourceMappingURL=perfil.css.map */
+
+
+
